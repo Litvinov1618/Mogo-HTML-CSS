@@ -1,0 +1,208 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 1.6;
+  margin: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+}
+
+/* header */
+.header {
+  width: 100%;
+  position: absolute;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 30px;
+}
+
+.header-logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* nav */
+nav {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.link-text {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  transition: color .1s linear;
+}
+
+.link-text:hover {
+  color: #fce38a;
+}
+
+.link-text:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #fce38a;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  height: 3px;
+  opacity: 0;
+  transition: opacity .1s linear;
+}
+
+.link-text:hover:after {
+  opacity: 1;
+}
+
+/* container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* intro */
+.intro {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/MoGo_FREE_Template_by_Laaqiq_01.jpg") center no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro-title {
+  font-size: 140px;
+  line-height: 140px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+}
+
+.intro-title:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 60px auto 60px auto;
+}
+
+.intro-inner {
+  width: 100%;
+  max-width: 880px;
+  margin: 50px auto 50px auto;
+  text-align: center;
+  vertical-align: top;
+}
+
+.intro-suptitle {
+  font-size: 62px;
+  font-family: 'Kaushan Script', cursive;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+/* button */
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  color: #ffffff;
+  margin-bottom: 60px;
+  border: 3px solid #ffffff;
+  padding: 13px 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: background .1s linear, color .1s linear;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* slider */
+.slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.slider-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-item {
+  width: 22%;
+  color: #ffffff;
+  border-top: 3px solid #ffffff;
+  padding-top: 15px;
+  transition: color .1s linear, border .1s linear;
+  opacity: 0.7;
+  position: relative;
+}
+
+.slider-item.active:before {
+  background-color: #f38181;
+  height: 3px;
+  width: 65px;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: -3px;
+  left: 0;
+}
+
+.slider-item:hover {
+  cursor: pointer;
+  color: #f38181;
+  border-top: 3px solid #f38181;
+}
+
+.slider-item b {
+  margin-right: 3px;
+  font-size: 19px;
+}
+
+@media screen and (max-width: 1366px) {
+  .intro-title {
+    font-size: 120px;
+  }
+
+  .intro-suptitle {
+    font-size: 42px;
+  }
+}
