@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0px;
 }
 
-/* header */
+/* HEADER */
 .header {
   width: 100%;
   position: absolute;
@@ -40,16 +40,18 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-/* nav */
+/* NAV */
 nav {
   text-transform: uppercase;
   font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 550px;
 }
 
 .link-text {
-  display: inline-block;
   vertical-align: top;
-  margin: 0 10px;
   text-decoration: none;
   color: #ffffff;
   position: relative;
@@ -78,18 +80,18 @@ nav {
   opacity: 1;
 }
 
-/* container */
+/* CONTAINER */
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* intro */
+/* INTRO */
 .intro {
   width: 100%;
   height: 100vh;
-  background: url("../images/MoGo_FREE_Template_by_Laaqiq_01.jpg") center no-repeat;
+  background: url("../images/Background-intro.jpg") center no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   display: flex;
@@ -98,7 +100,7 @@ nav {
 }
 
 .intro-title {
-  font-size: 140px;
+  font-size: 8vw;
   line-height: 140px;
   font-weight: 700;
   color: #ffffff;
@@ -113,7 +115,7 @@ nav {
   width: 60px;
   height: 3px;
   background-color: #ffffff;
-  margin: 60px auto 60px auto;
+  margin: 5vh auto 5vh auto;
 }
 
 .intro-inner {
@@ -125,13 +127,14 @@ nav {
 }
 
 .intro-suptitle {
-  font-size: 62px;
+  font-size: 5vw;
   font-family: 'Kaushan Script', cursive;
   color: #ffffff;
   font-weight: 400;
+  margin-top: 80px;
 }
 
-/* button */
+/* BUTTON */
 .btn {
   display: inline-block;
   vertical-align: top;
@@ -141,7 +144,7 @@ nav {
   border: 3px solid #ffffff;
   padding: 13px 30px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 1.3vw;
   transition: background .1s linear, color .1s linear;
 }
 
@@ -150,7 +153,7 @@ nav {
   color: #000000;
 }
 
-/* slider */
+/* SLIDER */
 .slider {
   position: absolute;
   bottom: 0;
@@ -172,12 +175,14 @@ nav {
   transition: color .1s linear, border .1s linear;
   opacity: 0.7;
   position: relative;
+  font-size: 1.2vw;
+  margin-bottom: 10px;
 }
 
 .slider-item.active:before {
   background-color: #f38181;
   height: 3px;
-  width: 65px;
+  width: 30%;
   content: "";
   display: block;
   position: absolute;
@@ -194,15 +199,133 @@ nav {
 
 .slider-item b {
   margin-right: 3px;
-  font-size: 19px;
+  font-size: 1.4vw;
 }
 
-@media screen and (max-width: 1366px) {
+/* SECTION HEADER */
+.story {
+  margin-bottom: 110px;
+}
+.section-header {
+  padding: 80px 0px;
+  text-align: center;
+  margin-bottom: 40px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.section-header h3 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+  color: black;
+}
+
+.section-header h2 {
+  font-size: 30px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.section-header p {
+  color: #999999;
+}
+
+.section-header h2:after {
+  content: "";
+  display: block;
+  background-color: #f38181;
+  width: 60px;
+  height: 3px;
+  margin: 40px auto;
+}
+
+/* ABOUT */
+.about-item {
+  background-color: #95e1d3;
+  position: relative;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-img img {
+  transition: opacity .2s linear;
+  display: block;
+}
+
+.about-item:hover .about-img img {
+  opacity: .1;
+}
+
+.about-item:hover .about-img {
+  transform: translate3d(-10px, -10px, 0);
+}
+
+.about-img {
+  background: linear-gradient(to bottom, #f38181, #fce38a);
+  transition: transform .2s linear;
+}
+
+/* хз как он это сделал */
+.about-text {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  top: 50%;
+  left: 0;
+  transform: translate3d(0, -50, 0);
+  width: 100%;
+  transition: opacity .1s linear;
+}
+
+.about-item:hover .about-text {
+  opacity: 1;
+}
+
+/* STAT */
+.stat {
+  background-color: #95e1d3;
+
+  width: 100%;
+}
+.stat-list {
+  display: flex;
+
+}
+.stat-item {
+  flex: 1 1 0;
+  border-left: 1px solid #b5eae0;
+  text-align: center;
+  color: white;
+}
+.stat-item:last-child {
+  border-right: 1px solid #b5eae0;
+}
+.stat-info {
+  margin: 80px 0;
+  text-transform: uppercase;
+}
+.stat-info b {
+  font-size: 72px;
+}
+
+/* @MEDIA */
+@media screen and (max-width: 400px) {
   .intro-title {
-    font-size: 120px;
+    font-size: 8vh;
   }
 
   .intro-suptitle {
-    font-size: 42px;
+    font-size: 5vh;
+  }
+
+  .btn {
+    font-size: 1.4vh;
   }
 }
