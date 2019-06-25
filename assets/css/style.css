@@ -15,6 +15,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0px;
 }
+
 section, footer {
   margin-top: 80px;
 }
@@ -59,7 +60,6 @@ nav {
   position: relative;
   transition: color .1s linear, fill .1s linear;
   fill: #ffffff;
-
 }
 
 .link-text:hover {
@@ -211,6 +211,7 @@ nav {
 .story {
   margin-bottom: 110px;
 }
+
 .section-header {
   text-align: center;
   width: 85%;
@@ -220,7 +221,6 @@ nav {
 .section-header h3 {
   font-family: 'Kaushan Script', cursive;
   font-size: 24px;
-
 }
 
 .section-header h2 {
@@ -251,7 +251,6 @@ nav {
 .about {
   display: flex;
   justify-content: space-between;
-
 }
 
 .about-img img {
@@ -298,27 +297,33 @@ nav {
   background-color: #95e1d3;
   width: 100%;
 }
+
 .stat-list {
   display: flex;
 }
+
 .stat-item {
   flex: 1 1 0;
   border-left: 1px solid #b5eae0;
   text-align: center;
   color: #e5e5e5;
 }
+
 .stat-item:last-child {
   border-right: 1px solid #b5eae0;
 }
+
 .stat-info {
   margin: 12vh 0;
   text-transform: uppercase;
 }
+
 .stat-info b {
   font-size: 72px;
 }
+
 /* AMAZING SERVICES */
-.services{
+.services {
   display: flex;
   justify-content: space-around;
 }
@@ -326,25 +331,28 @@ nav {
 .service-content {
   width: 30%;
   height: 100px;
-
   color: #b3b3b3;
   padding-left: 55px;
   position: relative;
 }
+
 .service-content svg {
   position: absolute;
   left: 0;
   top: 5px;
 }
+
 .service-content b {
   margin-bottom: 15px;
 }
+
 .line {
   width: 100%;
   height: 1px;
   background-color: #e5e5e5;
   margin: 50px 0;
 }
+
 /* UNIQUE DESIGN */
 .intro-design {
   width: 100%;
@@ -353,34 +361,42 @@ nav {
   background-size: cover;
   position: relative;
 }
+
 .design-header {
   padding-top: 40px;
 }
+
 .smartphone {
   position: absolute;
   left: 56%;
   top: 43%;
 }
+
 /* WE_DO */
 .we-do {
   display: flex;
 }
+
 .we-do-item {
   width: 50%;
 }
+
 .accordion-header {
-    border-bottom: 1px solid transparent;
-    position: relative;
+  border-bottom: 1px solid transparent;
+  position: relative;
 }
+
 .accordion-item.active .accordion-header {
-    border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
-.accordion-header p{
+
+.accordion-header p {
   display: inline-block;
   padding-left: 60px;
   font-size: 14px;
   text-transform: uppercase;
 }
+
 /* КРУТАЯ ФИЧА, СТРЕЛКА С ПОМОЩЬЮ BORDER */
 .accordion-header:after {
   content: "";
@@ -396,10 +412,12 @@ nav {
   transform: translateY(-50%) rotate(135deg);
   margin-bottom: 5px;
 }
+
 .accordion-item.active .accordion-header:after {
-    transform: translateY(-50%) rotate(-45deg);
-    margin-top: 5px;
+  transform: translateY(-50%) rotate(-45deg);
+  margin-top: 5px;
 }
+
 .accordion-header svg {
   position: absolute;
   z-index: 1;
@@ -407,13 +425,16 @@ nav {
   top: 50%;
   transform: translateY(-50%);
 }
+
 .accordion-item {
-    border: 1px solid #e5e5e5;
-    margin-bottom: 10px;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 10px;
 }
+
 .accordion-header:hover {
   cursor: pointer;
 }
+
 .accordion-content {
   font-size: 15px;
   color: #999999;
@@ -421,13 +442,112 @@ nav {
   font-weight: 300;
   display: none;
 }
-.accordion-item.active .accordion-content{
+
+.accordion-item.active .accordion-content {
   display: block;
 }
+
 .accordion-content p {
   margin: 15px 20px;
 }
 
+.reviews {
+  background-color: #f8f8f8;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.reviews-block {
+  padding: 70px 110px;
+  position: relative;
+}
+
+.reviews-item {
+  padding-left: 205px;
+  position: relative;
+}
+
+.reviews-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.reviews-text {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.reviews-author {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+}
+.reviews-author:before {
+  content: "";
+  width: 60px;
+  display: inline-block;
+  height: 3px;
+  background-color: #f38181;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.rev-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+  z-index: 1;
+  font-size: 0;
+  color: transparent;
+}
+.rev-btn:after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+}
+.rev-btn-prev {
+  left: 0;
+  transform: rotate(-45deg);
+}
+.rev-btn-next {
+  right: 0;
+  transform: rotate(135deg);
+}
+/* OUR TEAM */
+.section-header.team {
+  margin-bottom: 0px;
+}
+.list-item {
+  display: inline-block;
+  background-color: #fce38a;
+  width: 55px;
+  height: 55px;
+  border-right: 1px solid #f38181;
+  padding: 0;
+  line-height: 0px;
+
+}
+.list-item:hover{
+  background-color: #f38181;
+}
+.team-description {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.team-des-item {
+  text-align: center;
+}
+.team-des-item p {
+  color: #a6a6a6;
+}
+.team-des-item b {
+  text-transform: uppercase;
+}
 /* COPYWRITE */
 .copywrite {
   border-top: 1px solid #e5e5e5;
@@ -435,6 +555,7 @@ nav {
   height: 60px;
   text-align: center;
 }
+
 .copywrite span {
   color: #f49090;
 }
