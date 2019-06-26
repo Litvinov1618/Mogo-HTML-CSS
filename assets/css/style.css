@@ -525,16 +525,48 @@ nav {
 .section-header.team {
   margin-bottom: 0px;
 }
-.list-item {
-  display: inline-block;
-  background-color: #fce38a;
-  width: 55px;
-  height: 55px;
-  border-right: 1px solid #f38181;
-  padding: 0;
-  line-height: 0px;
-
+.about-text-team {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity .1s linear;
+  left: 5vw;
 }
+.about-item:hover .about-text-team {
+  opacity: 1;
+}
+.about-text-links {
+  display: flex;
+}
+.list-item {
+  background-color: #fce38a;
+  height: 55px;
+  width: 55px;
+  border-right: 1px solid #f29e8c;
+  position: relative;
+  transition: background-color .1s linear;
+}
+.list-item svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  fill: #f38181;
+  width: 100%;
+  transition: fill .1s linear;
+}
+.list-item:last-child {
+  border-right: none;
+}
+.list-item:hover {
+  background-color: #f38181;
+}
+.list-item:hover svg {
+  fill: white;
+}
+
 .list-item:hover{
   background-color: #f38181;
 }
