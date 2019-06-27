@@ -476,8 +476,13 @@ nav {
   top: 0;
   left: 0;
   z-index: 1;
+  height: 150px;
+  width: 150px;
 }
-
+.reviews-photo img {
+  background-size: cover;
+  background-position: center;
+}
 .reviews-text {
   font-size: 24px;
   font-style: italic;
@@ -583,6 +588,12 @@ nav {
 }
 .team-des-item b {
   text-transform: uppercase;
+}
+.reviews.brands {
+  padding: 47px 0;
+}
+.photo-border img{
+  border-radius: 50%;
 }
 /* COPYWRITE */
 .copywrite {
