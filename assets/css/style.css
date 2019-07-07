@@ -275,7 +275,6 @@ nav {
   transition: transform .2s linear;
 }
 
-/* хз как он это сделал */
 .about-text {
   text-transform: uppercase;
   font-weight: bold;
@@ -530,50 +529,31 @@ nav {
 .section-header.team {
   margin-bottom: 0px;
 }
-.about-text-team {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  z-index: 2;
-  opacity: 0;
-  transition: opacity .1s linear;
-  left: 5vw;
-}
-.about-item:hover .about-text-team {
-  opacity: 1;
-}
-.about-text-links {
+.social {
   display: flex;
+  justify-content: center;
 }
-.list-item {
+.social-items {
+  border-right: 1px solid #f38181;
   background-color: #fce38a;
   height: 55px;
   width: 55px;
-  border-right: 1px solid #f29e8c;
-  position: relative;
-  transition: background-color .1s linear;
+  padding: 10px;
+  transition: fill .1s linear, background-color .1s linear;
 }
-.list-item svg {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  fill: #f38181;
-  width: 100%;
-  transition: fill .1s linear;
+.social-items:hover {
+    background-color: #f38181;
 }
-.list-item:last-child {
-  border-right: none;
-}
-.list-item:hover {
-  background-color: #f38181;
-}
-.list-item:hover svg {
-  fill: white;
+.social-items:hover svg {
+  fill: #f8f8f8;
 }
 
-.list-item:hover{
-  background-color: #f38181;
+.social-items:last-child {
+  border-right: none;
+}
+.social-items svg {
+  fill: #f38181;
+  vertical-align: middle;
 }
 .team-description {
   display: flex;
@@ -589,9 +569,7 @@ nav {
 .team-des-item b {
   text-transform: uppercase;
 }
-.reviews.brands {
-  padding: 47px 0;
-}
+
 .photo-border img{
   border-radius: 50%;
 }
@@ -606,31 +584,9 @@ nav {
 .copywrite span {
   color: #f49090;
 }
-/* @MEDIA */
-/* @media screen and (max-width: 400px) {
-  .intro-title {
-    font-size: 8vh;
-  }
-  .intro-suptitle {
-    font-size: 5vh;
-  }
-  .btn {
-    font-size: 1.4vh;
-  }
-  .about {
-    flex-wrap: wrap;
-  }
-  .slider-item {
-    font-size: 1.6vh;
-  }
-  .slider-item b {
-    font-size: 1.8vh;
-  }
-  .stat-info {
-    font-size: 1.6vh;
-  }
-  .stat-info b {
-    font-size: 6vh;
-  }
-
-} */
+.brands {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+}
