@@ -832,7 +832,7 @@ nav
 {
     display: block;
 
-    transition: opacity .2 s linear;
+    transition: opacity .2s linear;
 }
 .works-item:hover .works-image
 {
