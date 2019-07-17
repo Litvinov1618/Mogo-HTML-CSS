@@ -12,6 +12,7 @@ body
 *:after
 {
     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
             box-sizing: border-box;
 }
 
@@ -88,6 +89,7 @@ nav
     color: #fff;
 
     fill: #fff;
+    font-size: 15px;
 }
 
 .link-text:hover
@@ -309,13 +311,14 @@ nav
     font-size: 30px;
 
     text-transform: uppercase;
-
 }
 
 .section-header p
 {
+    margin: 0;
+
     color: #999;
-    margin: 0;  
+    font-family: Roboto, sans-serif;
 
 }
 
@@ -455,7 +458,9 @@ nav
     padding-left: 55px;
 
     color: #b3b3b3;
+    font-family: 'Roboto', sans-serif;
 }
+
 
 .service-content svg
 {
@@ -467,6 +472,7 @@ nav
 .service-content b
 {
     margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .line
@@ -493,8 +499,8 @@ nav
 
 .header-devices
 {
-  margin-bottom: 0px;
-  padding-top: 100px;
+    margin-bottom: 0;
+    padding-top: 100px;
 }
 
 .devices
@@ -602,6 +608,7 @@ nav
     font-size: 15px;
     font-weight: 300;
     font-style: italic;
+    font-family: 'Roboto', sans-serif;
 
     display: none;
 
@@ -621,7 +628,7 @@ nav
 .reviews
 {
     width: 100%;
-    margin-top: 80px;
+    margin: 80px 0 80px 0;
 
     background-color: #f8f8f8;
 }
@@ -630,7 +637,7 @@ nav
 {
     position: relative;
 
-    padding: 70px 110px;
+    padding: 100px 110px;
 }
 
 .reviews-item
@@ -661,7 +668,9 @@ nav
 {
     font-size: 24px;
     font-weight: 300;
+    font-family: 'Roboto', sans-serif;
     font-style: italic;
+    color: #999999;
 }
 
 .reviews-author
@@ -784,6 +793,8 @@ nav
 .team-des-item p
 {
     color: #a6a6a6;
+    font-family: 'Roboto', sans-serif;
+    font-size: italic;
 }
 
 .team-des-item b
@@ -799,6 +810,7 @@ nav
 .works
 {
     display: flex;
+
     flex-wrap: wrap;
 }
 .works-col
@@ -820,7 +832,7 @@ nav
 {
     display: block;
 
-    transition: opacity .1s linear;
+    transition: opacity .2 s linear;
 }
 .works-item:hover .works-image
 {
@@ -856,20 +868,19 @@ nav
     text-transform: none;
 }
 /*HAP{Y CLIENTS*/
-.clients-header 
+.clients-header
 {
-    padding-top: 100px;
     margin-bottom: 100px;
+    padding-top: 100px;
 }
 .section-clients
 {
+    width: 100%;
     height: 100vh;
     min-height: 800px;
-    width: 100%;
 
-    background: url('../images/Background-4.png') center no-repeat;
+    background: url('../images/Background-4.jpg') center no-repeat;
     background-size: cover;
-
 }
 
 .clients-item
@@ -877,15 +888,13 @@ nav
     position: relative;
 
     width: 40%;
-    
-    padding-left: 150px;
     margin-bottom: 60px;
+    padding-left: 150px;
 }
 
 .clients
 {
     display: flex;
-    
 
     margin-top: 30px;
 
@@ -907,9 +916,9 @@ nav
 .clients-item img
 {
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0;
-    z-index: 1;
 }
 .clients-prof
 {
@@ -941,45 +950,315 @@ nav
     color: #999;
 }
 /*BLOG*/
-.blog {
-  display: flex;
-  justify-content: space-between;
+.blog
+{
+    display: flex;
+
+    justify-content: space-between;
 }
 
-.blog img {
-  text-align: center;
+.blog img
+{
+    text-align: center;
 }
-.blog-item {
-  width: 380px;
-  color: #999999;
-}
-.blog-name {
-  font-weight: 500;
-  text-transform: uppercase;
-  color: black;
-}
-.blog-text {
-  font-family: 'Roboto', sans-serif;
-  
-}
-.blog-numbers {
-  font-family: 'Roboto', sans-serif;
-  font-style: italic;
-  font-weight: 300;
-  padding-left: 30px;
-}
-hr {
-  color: #e5e5e5;
+.blog-item
+{
+    width: 380px;
 
-  opacity: .5;
-  margin: 15px 0;
+    color: #999;
+}
+.blog-name
+{
+    font-weight: 500;
+
+    text-transform: uppercase;
+
+    color: black;
+}
+.blog-text
+{
+    font-family: 'Roboto', sans-serif;
+}
+.blog-numbers
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+
+    position: relative;
+
+    margin-right: 10px;
+    padding-left: 25px;
+}
+hr
+{
+    margin: 15px 0;
+}
+.blog-image
+{
+    position: relative;
+}
+.blog-data
+{
+    line-height: 1;
+
+    position: absolute;
+    bottom: 20px;
+    left: -10px;
+
+    width: 60px;
+    height: 70px;
+    padding: 15px;
+
+    text-align: center;
+
+    color: white;
+    background-color: #95e1d3;
+}
+.blog-data span
+{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+
+    display: block;
+}
+.blog-data b
+{
+    font-size: 25px;
+}
+.fa-eye,
+.fa-comment-dots
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    color: #95e1d3;
+}
+/*MAP*/
+.section-map
+{
+    background: url('../images/Background-5.png') center no-repeat;
+    background-size: cover;
+}
+.map-title
+{
+    padding: 50px 0;
+
+    text-align: center;
+    vertical-align: middle;
+
 }
 
-/* COPYWRITE */
+.map-link
+{
+    font-size: 24px;
+    font-weight: bold;
+
+    display: block;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #f38181;
+    transition: font-size .2s linear;
+}
+.map-link:hover {
+    font-size: 28px; 
+}
+
+.map-link i
+{
+    display: block;
+
+    margin-bottom: 5px;
+    
+}
+.map-link::after
+{
+    display: block;
+
+    width: 60px;
+    height: 3px;
+    margin: 10px auto 0 auto;
+
+    content: '';
+
+    background-color: #f38181;
+    transition: width .5s linear;
+}
+/*FOOTER*/
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-col-1 {
+    width: 40%;
+}
+.footer-col-2 {
+    width: 25%;
+}
+.footer-col-3 {
+    width: 30%;
+}
+
+.footer-logo {
+    color: #cccccc;
+    font-size: 46px;
+    font-weight: bold;
+}
+.footer-text {
+    font-family: 'Roboto', sans-serif;
+    color: #cccccc;
+    margin: 25px 0 25px 0;
+    color: 
+}
+.footer-social {
+    margin-bottom: 40px;
+    font-family: 'Roboto',sans-serif;
+    font-style: italic;
+    color: #cccccc; 
+    font-weight: 300;
+}
+
+.footer-social i 
+{
+    font-size: 16px;
+    color: #95e1d3;
+    margin-left: 10px;
+    vertical-align: middle;
+    
+}
+/*SUBSCRIBE*/
+.subscribe 
+{
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+}
+
+.subscribe-input 
+{
+    border: 1px solid #cccccc;
+    border-right: 0;
+    padding: 15px 10px;
+    
+
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    height: 40px;
+    line-height: 1.1;
+    width: 60%;
+    transition: border .1s linear;
+}
+.subscribe-btn 
+{
+    background-color: #95e1d3;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 0;
+    padding: 12px 30px;
+    line-height: 1.1;
+    width: 40%;
+     
+    font-family: 'Montserrat', sans-serif;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color .1s linear;
+}
+.subscribe-btn:hover 
+{
+    background-color: #6aa399;
+    border-width: 700;
+}
+.subscribe-input:hover {
+ border-color: #95e1d3;   
+}
+.subscribe-input:focus {
+    outline: 0;
+    border-color: #95e1d3; 
+    border-width: 3px;
+}
+input::-moz-placeholder 
+{ 
+    color: #cccccc;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+input::-webkit-input-placeholder 
+{ 
+    color: #cccccc;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300; }
+/*FOOTER-BLOG*/
+.footer-col-title
+{
+    font-size: 14px;
+
+    text-transform: uppercase;
+}
+
+.footer-blog-item {
+    display: flex;
+    width: 100%;
+    margin:30px 0;
+}
+.footer-item-text {
+    padding-left: 20px;
+    font-size: 13px;
+}
+.footer-item-text a {
+    color: black;
+    text-decoration: none;
+    display: block; 
+    transition: color .1s linear;
+}
+.footer-item-text a:hover {
+    color: #95e1d3;
+}
+.footer-item-text span {
+    color: #cccccc;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+/*INSTAGRAM*/
+.footer-inst-img {
+    margin: 25px 0 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 265px;
+    height: 265px;
+}
+.footer-inst-img img {
+    height: auto;
+    width: 100%;
+    max-width: 87px;
+}
+.footer-inst-description a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-style: italic;
+    color: #cccccc;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+.footer-inst-description a:hover {
+    color: #95e1d3;
+}
+/* COYWRITE*/
 .copywrite
 {
     width: 100%;
     height: 60px;
+    margin-top: 70px;
 
     text-align: center;
 
