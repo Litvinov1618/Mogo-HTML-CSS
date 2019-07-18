@@ -460,23 +460,31 @@ nav
 {
     display: flex;
 
-    justify-content: space-around;
+    
+    flex-wrap: wrap;
 }
 
 .service-content
 {
     position: relative;
 
-    width: 30%;
+    width: 33.33333%;
     height: 100px;
     padding-left: 55px;
+    padding-right: 32px;
+    padding-bottom: 125px;
+    padding: 0 32px 125px 55px;
+    margin-bottom: 35px;
 
     color: #b3b3b3;
     font-family: 'Roboto', sans-serif;
 }
+.service-border {
+    border-bottom: 1px solid #e5e5e5;
 
+}
 
-.service-content svg
+.service-content img
 {
     position: absolute;
     top: 5px;
@@ -509,7 +517,7 @@ nav
     line-height: 0;
 
     display: block;
-    
+     
 }
 
 .header-devices
@@ -523,6 +531,7 @@ nav
     position: relative;
 
     width: 100%;
+    height: auto;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -538,11 +547,17 @@ nav
 .we-do
 {
     display: flex;
+    margin: 0 -15px;
 }
 
 .we-do-item
 {
     width: 50%;
+    padding: 0 15px;
+}
+.we-do-item img{
+    max-width: 100%;
+    height: auto;
 }
 
 .accordion-header
@@ -596,7 +611,7 @@ nav
     transform: translateY(-50%) rotate(-45deg);
 }
 
-.accordion-header svg
+.accordion-header img
 {
     position: absolute;
     z-index: 1;
@@ -670,13 +685,16 @@ nav
     left: 0;
 
     width: 150px;
-    height: 150px;
+    height: auto;
 }
 
 .reviews-photo img
 {
     background-position: center;
     background-size: cover;
+    max-width: 100%;
+    height: auto;
+
 }
 
 .reviews-text
@@ -686,6 +704,7 @@ nav
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     color: #999999;
+
 }
 
 .reviews-author
@@ -791,18 +810,12 @@ nav
     fill: #f38181;
 }
 
-.team-description
-{
-    display: flex;
 
-    margin-top: 20px;
-
-    justify-content: space-around;
-}
 
 .team-des-item
 {
     text-align: center;
+    margin-top: 20px;
 }
 
 .team-des-item p
@@ -815,6 +828,17 @@ nav
 .team-des-item b
 {
     text-transform: uppercase;
+}
+/*BRANDS*/
+.brands
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 250px;
+
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*OUR WORK*/
@@ -1285,15 +1309,7 @@ input::-webkit-input-placeholder
     color: #f49090;
 }
 
-.brands
-{
-    display: flex;
 
-    height: 250px;
-
-    justify-content: space-between;
-    align-items: center;
-}
 @media (max-width: 1230px)
 {
     .slider-item b
@@ -1328,6 +1344,19 @@ input::-webkit-input-placeholder
     .stat-info b {
         font-size: 50px;
     }
+    /*SERVICES*/
+    .service-content {
+        padding-bottom: 155px;
+
+    }
+    /*BRANDS*/
+
+    .brands-item {
+        width: 33.33333%;
+        text-align: center;
+
+    }
+
 
 
 }
@@ -1377,10 +1406,11 @@ input::-webkit-input-placeholder
     /*ABOUT CARDS*/
     .about {
         flex-wrap: wrap;
-        height: 790px;
+        
         justify-content: center;
         align-content: space-between;
     }
+        
     /*STAT*/
     .stat-item {
         flex: none;
@@ -1395,8 +1425,45 @@ input::-webkit-input-placeholder
         flex-wrap: wrap;
         justify-content: center;
     }
+    /*SERVICE*/
     .service-content {
         width: 50%;
+        padding-right: none;
+    }
+    .service-border {
+        border: none;
+    }
+    /*DEVICES*/
+    .devices {
+        max-width: 400px;
+    }
+    .devices-item img {
+        max-width: 100%;
+        height: auto;
+    }
+    .phone-item {
+       max-width: 55%;
+       right: -80px;
+       bottom: -70px;
+        
+    }
+    /*WEDO*/
+    .we-do-item:first-child {
+        display: none;
+    }
+    .we-do-item {
+        width: 100%;
+    }
+    /*REVIEWS*/
+    
+    .reviews-text {
+        font-size: 15px;
+    }
+    .reviews-photo {
+        width: 130px;
+    }
+    .reviews-block {
+        padding: 50px 50px ;
     }
 
     
@@ -1406,28 +1473,71 @@ input::-webkit-input-placeholder
 @media (max-width: 575px)
 {
     /*INTRO*/
+    .header-logo {
+        font-size: 15px;
+    }
     .btn
     {
         font-size: 2vw;
     }
     .slider-item b
     {
-        font-size: 3.5vw;
+        font-size: 4.5vw;
     }
     .slider-item
     {
-        font-size: 3vw;
+        font-size: 4vw;
+    }
+    .intro-title {
+        font-size: 6vh;
+    }
+    .intro-suptitle {
+        font-size: 3vh;
+    }
+    .intro-inner {
+        margin: 0;
     }
     /*SECTION*/
     .section-header h2:after
     {
         margin: 15px auto;
     }
-    
-    .devices-item img,
-    .adaptive-phone{
+    .service-content {
         width: 100%;
+        padding-bottom: 20px;
+        margin-left: 20px;
+    }
+    /*DEVICES*/
+    .phone-item {
+        right: -30px;
+    }
+    /*REWIEVS*/
+    .reviews-item {
+        padding-left: 110px;
+    }
+    .reviews-photo {
+        width: 100px;
+    }
+    .reviews-author {
+        font-size: 15px;
+    }
+    .reviews-author:before {
+        width: 30px;
+        margin-right: 2px;
+    }
+    .reviews-text {
+        font-size: 12px;
+    }
+    .reviews-block {
+        padding: 20px 20px;
+    }
+    /*BRANDS*/
+
+    .brands-item img {
+        max-width: 100%;
         height: auto;
     }
-    
+    .brands-item {
+        padding-right: 15px;
+    }
 }
