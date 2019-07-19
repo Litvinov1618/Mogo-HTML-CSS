@@ -902,7 +902,10 @@ nav
     opacity: 0;
     color: #fff;
 }
-
+.works-info > img {
+    width: 30px; 
+    height: 30px;
+}
 
 .works-subtext
 {
@@ -1035,6 +1038,10 @@ nav
 hr
 {
     margin: 15px 0;
+    
+    border:none; 
+    background:#e5e5e5; 
+    height:1px;
 }
 .blog-image
 {
@@ -1096,7 +1103,10 @@ hr
     vertical-align: middle;
 
 }
-
+.map-title h2 {
+    font-size: 24px;
+    display: inline-block;
+}
 .map-link
 {
     font-size: 24px;
@@ -1110,6 +1120,7 @@ hr
     color: #f38181;
     transition: font-size .2s linear;
 }
+
 .map-link:hover {
     font-size: 28px; 
 }
