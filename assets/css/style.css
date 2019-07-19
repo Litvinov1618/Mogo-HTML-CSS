@@ -1556,10 +1556,10 @@ input::-webkit-input-placeholder
         font-size: 3vw;
     }
     .intro-title {
-        font-size: 6vh;
+        font-size: 8vh;
     }
     .intro-suptitle {
-        font-size: 3vh;
+        font-size: 5vh;
     }
     
     /*SECTION*/
@@ -1578,10 +1578,12 @@ input::-webkit-input-placeholder
     }
     /*REWIEVS*/
     .reviews-item {
-        padding-left: 110px;
+        padding-left: 80px;
     }
     .reviews-photo {
         width: 70px;
+        top: 50%;
+        transform: translateY(-50%);
     }
     .reviews-author {
         font-size: 15px;
@@ -1594,7 +1596,7 @@ input::-webkit-input-placeholder
         font-size: 12px;
     }
     .reviews-block {
-        padding: 20px 20px;
+        padding: 45px 20px 20px;
     }
     /*BRANDS*/
 
@@ -1615,9 +1617,7 @@ input::-webkit-input-placeholder
     .footer-col-3 {
         width: 90%;
     }
-    .footer-col-3 {
-        display: none;
-    }
+    
     .works-info {
         font-size: 8px;
     }
