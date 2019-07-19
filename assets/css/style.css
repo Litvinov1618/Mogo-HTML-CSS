@@ -1549,11 +1549,11 @@ input::-webkit-input-placeholder
     }
     .slider-item b
     {
-        font-size: 4.5vw;
+        font-size: 4vw;
     }
     .slider-item
     {
-        font-size: 4vw;
+        font-size: 3vw;
     }
     .intro-title {
         font-size: 6vh;
@@ -1574,7 +1574,7 @@ input::-webkit-input-placeholder
     }
     /*DEVICES*/
     .phone-item {
-        right: -30px;
+        right: -10px;
     }
     /*REWIEVS*/
     .reviews-item {
@@ -1614,5 +1614,11 @@ input::-webkit-input-placeholder
     .footer-col-2,
     .footer-col-3 {
         width: 90%;
+    }
+    .footer-col-3 {
+        display: none;
+    }
+    .works-info {
+        font-size: 8px;
     }
 }
